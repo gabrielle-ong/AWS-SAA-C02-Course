@@ -719,14 +719,12 @@ CANNOTS:
 
 Limits:
 - 300 Group Limit per account. This can be increased with a support ticket.
-- Rmb, 5,000 IAM users per account. 
-- Rmb, IAM user can be a member of 10 groups
 - No limit to number of users in groups, but remember - max 5,000 users per account => maximum all 5,000 users in a single group
 - There is **no all users** IAM group.
   - You can create a group and add all users into that group, but it needs to be created and managed on your own.
 
 **NOTE: Resource Policy**:: allow/deny identities to access a specific resource, eg bucket policy
-It does so by referencing the identity using an ARN (Amazon Reference Name).
+It does so by referencing the identity using an ARN (Amazon Resource Name).
 - IAM Users and IAM Roles can be referenced using ARN
 - But **Groups are not a true identity**, can't be referenced as a principal in a policy.
 - Groups are just to group up IAM users, and let users inherit permissions to assign to the group
